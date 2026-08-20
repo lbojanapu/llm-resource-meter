@@ -42,7 +42,7 @@ Estimate the real-world resource consumption of LLM usage, including tokens, ene
                          │ Dashboard │
                          └───────────┘
                          
-## repository structure
+# repository structure
 llm-resource-meter/
 │
 ├── src/
