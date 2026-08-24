@@ -2,45 +2,7 @@
 Estimate the real-world resource consumption of LLM usage, including tokens, energy, water, and carbon impact. The project helps users understand the environmental cost of their AI interactions and estimate consumption across individual sessions, days, months, or years.
 
 # Architecture
-                    ┌─────────────────────┐
-                    │       User          │
-                    │ prompts / tokens    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    Usage Input      │
-                    │ input + output      │
-                    │ tokens + model      │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-              ┌──────────────────────────────┐
-              │     Resource Estimation      │
-              │                              │
-              │ Token Calculator              │
-              │ Energy Estimator              │
-              │ Water Estimator               │
-              │ Carbon Estimator              │
-              └──────────────┬───────────────┘
-                             │
-                             ▼
-                    ┌─────────────────────┐
-                    │   Usage Result      │
-                    │                     │
-                    │ tokens              │
-                    │ Wh / kWh            │
-                    │ liters              │
-                    │ g / kg CO₂e         │
-                    └──────────┬──────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │     API / CLI       │
-                    └──────────┬──────────┘
-                               │
-                         ┌─────▼─────┐
-                         │ Dashboard │
-                         └───────────┘
+[![Alt Text](./assets/image.png)](./assets/image.png)
                          
 # repository structure
 llm-resource-meter/
